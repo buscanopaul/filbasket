@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Fiba';
+    src: url("../styles/fonts/fiba-regular_bigfontsite.com.otf");
+}
+
+@font-face {
+    font-family: 'RobotoMonoBold';
+    src: url("../styles/fonts/RobotoMono-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'RobotoMono';
+    src: url("../styles/fonts/RobotoMono-VariableFont_wght.ttf");
+}
