@@ -5,7 +5,7 @@ import Header from "../components/Header";
 
 const Home: NextPage = () => {
   return (
-    <div className="relative mx-auto">
+    <div className="relative">
       <Head>
         <title>FilBasket - Filipino Basketball League</title>
         <link rel="icon" href="/favicon.ico" />
