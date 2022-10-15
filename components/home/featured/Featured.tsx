@@ -67,13 +67,18 @@ const Featured: NextPage<Props> = (props: Props) => {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 5000,
     pauseOnHover: true,
   };
 
   return (
-    <div id="homeFeatured" className="max-w-screen-2xl mx-auto px-3">
+    <div
+      id="homeFeatured"
+      className={`max-w-screen-2xl mx-auto px-3 ${
+        isMobile ? `pb-48` : `pb-10`
+      }`}
+    >
       <Slider {...settings}>
         {slideImages.map((slideImage) => (
           <FeatureItem

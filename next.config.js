@@ -2,6 +2,11 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["static.www.nfl.com", "nba-smart.imgix.net"],
+    domains: [
+      "static.www.nfl.com",
+      "nba-smart.imgix.net",
+      "logos-world.net",
+      "upload.wikimedia.org",
+    ],
   },
 };

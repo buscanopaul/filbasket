@@ -4,7 +4,10 @@ import Image from "next/image";
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 
-type Props = {};
+interface Props {
+  imageUrl: String;
+  title: String;
+}
 
 const FeatureItem: NextPage<Props> = (props: Props) => {
   const isTablet = useMediaQuery({ query: "(min-width: 768px)" });
@@ -21,22 +24,20 @@ const FeatureItem: NextPage<Props> = (props: Props) => {
         }}
       >
         <div
-          className={`h-1/${
-            isTablet ? `3` : `2`
+          className={`${
+            isTablet ? `h-1/3` : `h-1/2`
           } flex flex-col justify-end px-5 py-10 bg-gradient-to-t from-black`}
         >
-          <div className={`border-l-4 w-${isTablet ? `1/2` : `full`}`}>
+          <div className={`border-l-4 ${isTablet ? `w-1/2` : `w-full`}`}>
             <div className="pl-4">
               <div className="flex flex-row items-center pb-2">
                 <CalendarDaysIcon className="h-8 w-8 text-white" />
-                <p className="text-white font-robotoMonoBold text-lg pl-1">
-                  14 OCT
-                </p>
+                <p className="text-white font-fiba text-lg pl-1">14 OCT</p>
               </div>
               <h1
                 className={`text-white ${
                   isTablet ? `text-4xl` : `text-xl`
-                } font-robotoMonoBold`}
+                } font-fiba`}
               >
                 {props.title}
               </h1>
