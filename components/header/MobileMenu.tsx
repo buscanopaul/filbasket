@@ -10,7 +10,10 @@ function MobileMenu() {
   });
 
   return (
-    <div ref={dropdown} className="bg-yellow-500 px-4 pb-5">
+    <div
+      ref={dropdown}
+      className="bg-yellow-500 px-4 pb-5 absolute z-50 w-full"
+    >
       <MenuItem title="News" px={0} isPrimary={false} isBorder={true} />
       <MenuItem title="Schedule" px={0} isPrimary={false} isBorder={true} />
       <MenuItem title="Teams" px={0} isPrimary={false} isBorder={true} />
