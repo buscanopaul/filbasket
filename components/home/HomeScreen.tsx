@@ -1,5 +1,6 @@
 import React from "react";
-import ScoresCarousel from "./ScoresCarousel";
+import Featured from "./featured/Featured";
+import ScoresCarousel from "./scores/ScoresCarousel";
 
 type Props = {};
 
@@ -7,6 +8,7 @@ function HomeScreen({}: Props) {
   return (
     <div>
       <ScoresCarousel />
+      <Featured />
     </div>
   );
 }

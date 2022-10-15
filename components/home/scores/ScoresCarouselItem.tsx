@@ -9,7 +9,7 @@ interface Props {}
 const ScoresCarouselItem: NextPage<Props> = (props: Props) => {
   return (
     <Link href="/game-details">
-      <div className="bg-yellow-500 rounded-md p-3 w-52 mx-1 cursor-pointer hover:bg-secondary-color group">
+      <div className="bg-yellow-500 rounded-md p-3 w-52 mx-1 cursor-pointer hover:bg-secondary-color group transition">
         {/* time and final */}
         <div className="flex flex-row items-start justify-between">
           {/* <h3 className="font-robotoMonoBold text-xs text-secondary-color group-hover:text-white">
@@ -49,23 +49,23 @@ const ScoresCarouselItem: NextPage<Props> = (props: Props) => {
             </div>
           </div>
           {/* buy tickets or scores */}
-          <Link href="/tickets">
+          {/* <Link href="/tickets">
             <div className="flex flex-row items-center border rounded-full px-2 py-1 border-secondary-color group-hover:bg-white transition">
               <h3 className="font-robotoMonoBold text-xs text-secondary-color pr-1">
                 TICKETS
               </h3>
               <TicketIcon className="h-4 w-4 text-secondary-color" />
             </div>
-          </Link>
+          </Link> */}
           {/* scores */}
-          {/* <div className="flex flex-col items-end">
-          <h3 className="font-robotoMonoBold text-sm text-secondary-color group-hover:text-white">
-            12
-          </h3>
-          <h3 className="font-robotoMonoBold text-sm text-secondary-color group-hover:text-white">
-            56
-          </h3>
-        </div> */}
+          <div className="flex flex-col items-end">
+            <h3 className="font-robotoMonoBold text-sm text-secondary-color group-hover:text-white">
+              12
+            </h3>
+            <h3 className="font-robotoMonoBold text-sm text-secondary-color group-hover:text-white">
+              56
+            </h3>
+          </div>
         </div>
         {/* live or not */}
         {/* <h3 className="font-robotoMonoBold text-xs text-red-600 pt-1">LIVE</h3> */}
