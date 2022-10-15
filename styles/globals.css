@@ -16,3 +16,7 @@
     font-family: 'RobotoMono';
     src: url("../styles/fonts/RobotoMono-VariableFont_wght.ttf");
 }
+
+.slick-next:before, .slick-prev:before {
+    content: none !important;
+}
