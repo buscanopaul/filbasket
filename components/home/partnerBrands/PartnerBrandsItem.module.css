@@ -1,0 +1,7 @@
+@media only screen and (min-width: 767px) {
+    /* For tablet: */
+    .partnerBrandsItemContainer {
+        padding-left: 0; /* 16px */
+        padding-right: 0; /* 16px */
+    }
+}

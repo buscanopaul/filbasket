@@ -1,6 +1,6 @@
 import React from "react";
 import PartnerBrandsItem from "./partnerBrandsItem";
-import { useMediaQuery } from "react-responsive";
+import styles from "./PartnerBrands.module.css";
 
 type Props = {};
 
@@ -39,13 +39,9 @@ const slideImages = [
 ];
 
 function PartnerBrands({}: Props) {
-  const isTablet = useMediaQuery({ query: "(min-width: 768px)" });
-
   return (
     <div
-      className={`max-w-screen-2xl mx-auto w-full px-3 ${
-        isTablet ? `pt-24` : `pt-6`
-      }`}
+      className={`max-w-screen-2xl mx-auto w-full px-3 pt-6 ${styles.partnerBrandsContainer}`}
     >
       <h2 className={`text-center font-fiba text-4xl`}>Partner Brands</h2>
       <div className="flex flex-wrap justify-around items-center">

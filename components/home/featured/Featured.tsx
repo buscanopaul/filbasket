@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import FeatureItem from "./FeatureItem";
-import { useMediaQuery } from "react-responsive";
+import styles from "./Featured.module.css";
 
 interface Props {}
 
@@ -42,8 +42,6 @@ const slideImages = [
 ];
 
 const Featured: NextPage<Props> = (props: Props) => {
-  const isMobile = useMediaQuery({ query: "(min-width: 768px)" });
-
   var settings = {
     customPaging: function (i) {
       return (
@@ -62,7 +60,7 @@ const Featured: NextPage<Props> = (props: Props) => {
         </a>
       );
     },
-    dots: isMobile ? true : false,
+    dots: true,
     dotsClass: "slick-dots slick-thumb",
     infinite: true,
     slidesToShow: 1,
@@ -75,9 +73,7 @@ const Featured: NextPage<Props> = (props: Props) => {
   return (
     <div
       id="homeFeatured"
-      className={`max-w-screen-2xl mx-auto px-3 ${
-        isMobile ? `pb-48` : `pb-10`
-      }`}
+      className={`max-w-screen-2xl mx-auto px-3 pb-10 ${styles.homeFeatured}`}
     >
       <Slider {...settings}>
         {slideImages.map((slideImage) => (
