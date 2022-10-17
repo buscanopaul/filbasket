@@ -7,6 +7,7 @@ module.exports = {
       "nba-smart.imgix.net",
       "logos-world.net",
       "upload.wikimedia.org",
+      "ak-static.cms.nba.com",
     ],
   },
 };

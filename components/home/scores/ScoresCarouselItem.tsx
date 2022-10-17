@@ -9,7 +9,7 @@ interface Props {}
 const ScoresCarouselItem: NextPage<Props> = (props: Props) => {
   return (
     <Link href="/game-details">
-      <div className="bg-yellow-500 rounded-md p-3 w-52 mx-1 cursor-pointer hover:bg-secondary-color group transition">
+      <div className="bg-primary-color rounded-md p-3 w-52 mx-1 cursor-pointer hover:bg-secondary-color group transition">
         {/* time and final */}
         <div className="flex flex-row items-start justify-between">
           {/* <h3 className="font-robotoMonoBold text-xs text-secondary-color group-hover:text-white">
