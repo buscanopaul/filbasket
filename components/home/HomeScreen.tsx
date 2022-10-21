@@ -1,5 +1,6 @@
 import React from "react";
 import Featured from "./featured/Featured";
+import LatestVideos from "./latestVideos/LatestVideos";
 import PartnerBrands from "./partnerBrands/partnerBrands";
 import ScoresCarousel from "./scores/ScoresCarousel";
 import Showcase from "./showcase/Showcase";
@@ -15,6 +16,7 @@ function HomeScreen({}: Props) {
       <PartnerBrands />
       <Showcase />
       <TopPerformers />
+      <LatestVideos />
     </div>
   );
 }

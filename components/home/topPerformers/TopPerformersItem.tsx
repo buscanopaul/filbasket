@@ -6,7 +6,7 @@ type Props = {};
 
 const TopPerformersItem = (props: Props) => {
   return (
-    <div className="rounded-lg shadow-lg bg-primary-color relative xl:p-12 p-9">
+    <div className="rounded-lg shadow-lg bg-primary-color relative xl:p-12 p-9 transition-all duration-500 ease-in-out transform">
       {/* team logo and player photo */}
       <div className="relative flex flex-row items-start justify-between">
         {/* team logo */}

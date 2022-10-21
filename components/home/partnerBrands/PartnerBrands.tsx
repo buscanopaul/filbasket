@@ -1,6 +1,7 @@
 import React from "react";
-import PartnerBrandsItem from "./partnerBrandsItem";
+import PartnerBrandsItem from "./PartnerBrandsItem";
 import styles from "./PartnerBrands.module.css";
+import Title from "../../text/Title";
 
 type Props = {};
 
@@ -43,7 +44,7 @@ function PartnerBrands({}: Props) {
     <div
       className={`max-w-screen-2xl mx-auto w-full px-3 pt-6 mb-5 ${styles.partnerBrandsContainer}`}
     >
-      <h2 className={`text-center font-fiba text-4xl pb-5`}>Partner Brands</h2>
+      <Title title="Partner Brands" isDark={true} isLeft={false} />
       <div className="flex flex-wrap justify-around items-center">
         {slideImages.map((slideImage) => (
           <PartnerBrandsItem key={slideImage.id} imageUrl={slideImage.url} />
