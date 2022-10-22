@@ -8,7 +8,7 @@ type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <div className="bg-secondary-color relative">
+    <div className="bg-secondary-color relative mt-24">
       <div className="flex lg:flex-row flex-col items-start justify-between max-w-screen-2xl mx-auto relative w-full py-14 border-b border-gray-500 2xl:px-0 px-3">
         <Link href="/">
           <Image

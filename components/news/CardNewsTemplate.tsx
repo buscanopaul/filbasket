@@ -9,7 +9,7 @@ type Props = {};
 const CardNewsTemplate = (props: Props) => {
   return (
     <div className="relative mb-14">
-      <Link href={"/news/details"}>
+      <Link href={`/news/${1}`}>
         <div
           style={{
             backgroundImage: `url(${bg.src})`,
