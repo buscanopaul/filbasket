@@ -11,7 +11,6 @@ type Props = {};
 function HomeScreen({}: Props) {
   return (
     <div>
-      <ScoresCarousel />
       <Featured />
       <PartnerBrands />
       <Showcase />

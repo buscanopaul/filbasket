@@ -12,9 +12,7 @@ const Home: NextPage = () => {
         <title>FilBasket - Filipino Basketball League</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
       <HomeScreen />
-      <Footer />
     </div>
   );
 };
