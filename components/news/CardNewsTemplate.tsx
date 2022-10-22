@@ -19,7 +19,7 @@ const CardNewsTemplate = (props: Props) => {
       </Link>
       <div>
         {/* date, like and views */}
-        <div className="flex flex-row justify-between items-center">
+        <div className="flex flex-row justify-between items-center pt-1">
           {/* <p>6 hours ago</p> */}
           <p className="font-robotoMono text-xs text-gray-400">
             October 20, 2022
