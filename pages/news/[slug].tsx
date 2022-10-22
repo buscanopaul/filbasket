@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
+import RelatedArticleItem from "../../components/home/newsDetail/RelatedArticleItem";
 import ShareArticle from "../../components/home/newsDetail/ShareArticle";
+import Title from "../../components/text/Title";
 import bg from "../../styles/images/thumbnail_jordan.jpeg";
 
 type Props = {};
@@ -8,7 +10,7 @@ type Props = {};
 const News = (props: Props) => {
   return (
     <div className="max-w-screen-2xl mx-auto relative px-3 pt-14">
-      <div className="flex md:flex-row flex-col items-center justify-between relative mb-14 border-b border-gray-300 pb-20">
+      <div className="flex md:flex-row flex-col items-start justify-between relative mb-14 border-b border-gray-300 pb-20">
         <div className="md:w-3/5 md:pr-20">
           <h1 className="text-secondary-color font-fiba text-5xl w-auto mb-5">
             5 creative photo editing tips every graphic designer should know
@@ -45,7 +47,7 @@ const News = (props: Props) => {
         />
       </div>
       {/* article description */}
-      <div className="flex md:flex-row flex-col relative w-full">
+      <div className="flex md:flex-row flex-col relative w-full mb-20">
         <div className="w-full">
           <p className="font-robotoMono text-secondary-color pr-14 ">
             Everyone wants to look beautiful, or at least, they want their
@@ -164,13 +166,20 @@ const News = (props: Props) => {
             can't wait to see what you create!
           </p>
         </div>
-        <div className="bg-primary-color h-64 w-30 px-12 pt-7 rounded-md sticky md:mt-0 mt-10">
+        <div className="bg-primary-color h-64 md:w-1/5 w-1/2 px-12 pt-7 rounded-md sticky md:mt-0 mt-10">
           <h4 className="font-robotoMonoBold text-secondary-color">Share on</h4>
           <ShareArticle />
           <ShareArticle />
           <ShareArticle />
           <ShareArticle />
         </div>
+      </div>
+      <Title title="You might also like" isDark={true} isLeft={true} />
+      <div className="grid md:grid-cols-4 md:gap-8 grid-cols-1 gap-8 w-full items-centered relative">
+        <RelatedArticleItem />
+        <RelatedArticleItem />
+        <RelatedArticleItem />
+        <RelatedArticleItem />
       </div>
     </div>
   );
