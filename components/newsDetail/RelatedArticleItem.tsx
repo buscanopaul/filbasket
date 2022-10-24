@@ -1,5 +1,5 @@
 import React from "react";
-import bg from "../../../styles/images/thumbnail_jordan.jpeg";
+import bg from "../../styles/images/thumbnail_jordan.jpeg";
 
 type Props = {};
 

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import RelatedArticleItem from "../../components/home/newsDetail/RelatedArticleItem";
-import ShareArticle from "../../components/home/newsDetail/ShareArticle";
+import RelatedArticleItem from "../../components/newsDetail/RelatedArticleItem";
+import ShareArticle from "../../components/newsDetail/ShareArticle";
 import Title from "../../components/text/Title";
 import bg from "../../styles/images/thumbnail_jordan.jpeg";
 

@@ -7,12 +7,13 @@ interface Props {
   px: number;
   isPrimary: Boolean;
   isBorder: Boolean;
+  page: String;
 }
 
 const MenuItem: NextPage<Props> = (props) => {
   return (
     <div className={`px-${props.px}`}>
-      <Link href="/news">
+      <Link href={`/${props.page}`}>
         <h1
           className={`cursor-pointer text-white font-robotoMonoBold ${
             props.isPrimary ? `hover:text-primary-color` : `hover:text-black`

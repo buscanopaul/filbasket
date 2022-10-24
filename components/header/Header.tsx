@@ -58,6 +58,7 @@ function Header() {
           <div className="hidden md:flex">
             <MenuItem
               title="Contact"
+              page="contact"
               px={0}
               isPrimary={true}
               isBorder={false}

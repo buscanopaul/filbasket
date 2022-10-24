@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import FeatureItem from "./FeatureItem";
 import styles from "./Featured.module.css";
+import Link from "next/link";
 
 interface Props {}
 
@@ -46,17 +47,22 @@ const Featured: NextPage<Props> = (props: Props) => {
     customPaging: function (i) {
       return (
         <a>
-          <div
-            className="thumbnail grayscale hover:grayscale-0 h-28 block relative w-auto bg-cover bg-center rounded-md transition bg-secondary-color"
-            style={{
-              backgroundImage: `url(${
-                slideImages[i] ? slideImages[i].url : ""
-              })`,
-            }}
-          />
-          <p className="thumbnail-title text-left text-xs pt-1 font-robotoMonoBold text-black line-clamp-2">
-            {slideImages[i].title}
-          </p>
+          <Link href={`/news/${1}`}>
+            <div>
+              <div
+                className="thumbnail grayscale hover:grayscale-0 h-28 block relative w-auto bg-cover bg-center rounded-md transition bg-secondary-color"
+                style={{
+                  backgroundImage: `url(${
+                    slideImages[i] ? slideImages[i].url : ""
+                  })`,
+                }}
+              />
+
+              <p className="thumbnail-title text-left text-xs pt-1 font-robotoMonoBold text-black line-clamp-2">
+                {slideImages[i].title}
+              </p>
+            </div>
+          </Link>
         </a>
       );
     },

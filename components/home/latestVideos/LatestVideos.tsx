@@ -8,7 +8,7 @@ interface Props {}
 
 const LatestVideos = ({}: Props) => {
   return (
-    <div className="max-w-screen-2xl mx-auto px-3 mt-20">
+    <div className="max-w-screen-2xl mx-auto px-3 mt-20 relative">
       <Title title="Most Popular" isDark={true} isLeft={true} />
       <PopularVideo />
       <Title title="Latest Videos" isDark={true} isLeft={true} />
