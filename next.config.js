@@ -8,6 +8,7 @@ module.exports = {
       "logos-world.net",
       "upload.wikimedia.org",
       "ak-static.cms.nba.com",
+      "yt3.ggpht.com",
     ],
   },
 };
