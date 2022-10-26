@@ -8,7 +8,7 @@ const RelatedArticleItem = (props: Props) => {
     <div className="relative w-full">
       <div
         style={{
-          backgroundImage: `url(${bg.src})`,
+          backgroundImage: `url(https://i.ytimg.com/vi/Zg3j6anDU6U/maxresdefault.jpg)`,
         }}
         className={`rounded-md md:h-60 h-80 bg-secondary-color bg-cover bg-no-repeat bg-center relative`}
       />

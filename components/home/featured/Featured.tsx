@@ -47,22 +47,20 @@ const Featured: NextPage<Props> = (props: Props) => {
     customPaging: function (i) {
       return (
         <a>
-          <Link href={`/news/${1}`}>
-            <div>
-              <div
-                className="thumbnail grayscale hover:grayscale-0 h-28 block relative w-auto bg-cover bg-center rounded-md transition bg-secondary-color"
-                style={{
-                  backgroundImage: `url(${
-                    slideImages[i] ? slideImages[i].url : ""
-                  })`,
-                }}
-              />
+          <div>
+            <div
+              className="thumbnail grayscale hover:grayscale-0 h-28 block relative w-auto bg-cover bg-center rounded-md transition bg-secondary-color"
+              style={{
+                backgroundImage: `url(${
+                  slideImages[i] ? slideImages[i].url : ""
+                })`,
+              }}
+            />
 
-              <p className="thumbnail-title text-left text-xs pt-1 font-robotoMonoBold text-black line-clamp-2">
-                {slideImages[i].title}
-              </p>
-            </div>
-          </Link>
+            <p className="thumbnail-title text-left text-xs pt-1 font-robotoMonoBold text-black line-clamp-2">
+              {slideImages[i].title}
+            </p>
+          </div>
         </a>
       );
     },

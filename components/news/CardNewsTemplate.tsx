@@ -12,7 +12,7 @@ const CardNewsTemplate = (props: Props) => {
       <Link href={`/news/${1}`}>
         <div
           style={{
-            backgroundImage: `url(${bg.src})`,
+            backgroundImage: `url("${bg.src}")`,
           }}
           className={`cursor-pointer mb-1 rounded-md h-64 bg-secondary-color bg-cover bg-no-repeat bg-center relative`}
         ></div>

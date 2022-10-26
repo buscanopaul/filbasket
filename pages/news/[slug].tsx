@@ -23,7 +23,7 @@ const News = (props: Props) => {
           <div className="flex flex-row items-center pt-5">
             <Image
               className="cursor-pointer hover:opacity-80 bg-secondary-color rounded-full"
-              src={require("../../styles/images/logo.png")}
+              src="https://yt3.ggpht.com/ytc/AMLnZu9vflVyybhDrc9G4FzzvPd0R8UGKlqzmC19ctiW=s48-c-k-c0x00ffffff-no-rj"
               width={50}
               height={50}
             />
@@ -41,7 +41,7 @@ const News = (props: Props) => {
         </div>
         <div
           style={{
-            backgroundImage: `url(${bg.src})`,
+            backgroundImage: `url(https://i.ytimg.com/vi/hBbVxJNwEFY/maxresdefault.jpg)`,
           }}
           className={`w-full md:w-2/5 rounded-md h-96 bg-secondary-color bg-cover bg-no-repeat bg-center relative mt-10 md:mt-0`}
         />

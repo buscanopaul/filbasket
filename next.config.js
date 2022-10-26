@@ -9,6 +9,7 @@ module.exports = {
       "upload.wikimedia.org",
       "ak-static.cms.nba.com",
       "yt3.ggpht.com",
+      "cdn.nba.com",
     ],
   },
 };

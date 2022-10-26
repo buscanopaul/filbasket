@@ -8,7 +8,7 @@ const VideoDetail = (props: Props) => {
   return (
     <div className="relative">
       <iframe
-        className="w-full aspect-video rounded-md"
+        className="w-full aspect-video rounded-md bg-secondary-color"
         src="https://www.youtube.com/embed/RdACcw_eZRc"
         allowfullscreen
       ></iframe>
