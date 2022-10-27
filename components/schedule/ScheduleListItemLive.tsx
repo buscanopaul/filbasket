@@ -62,14 +62,14 @@ const ScheduleListItemLive = (props: Props) => {
         </p>
       </div>
       {/* preview or box score */}
-      <Link href={`/game-detail/${1}/#box`}>
+      <Link href={`/game-detail/${1}/#live`}>
         <div className="flex flex-row items-center lg:justify-self-end justify-self-start cursor-pointer">
           <PresentationChartBarIcon className="h-5 w-5 text-red-500" />
           <p className="font-robotoMonoBold text-red-500 pl-2">Live Stats</p>
         </div>
       </Link>
       {/* tickets or highlights */}
-      <Link href={`/videos/${1}`}>
+      <Link href={`/game-detail/${1}/#live`}>
         <div className="flex flex-row items-center lg:justify-self-end justify-self-start cursor-pointer">
           <PlayCircleIcon className="h-5 w-5 text-red-500" />
           <p className="font-robotoMonoBold text-red-500 pl-2">Watch</p>
