@@ -9,7 +9,7 @@ const TeamHeader = (props: Props) => {
       style={{
         backgroundImage: `url(${bg.src})`,
       }}
-      className="relative flex lg:flex-row flex-col lg:items-start items-center justify-between bg-secondary-color rounded-md md:p-16 p-8 bg-cover bg-no-repeat bg-center"
+      className="relative flex lg:flex-row flex-col lg:items-start items-center justify-between bg-secondary-color rounded-md md:p-12 p-8 bg-cover bg-no-repeat bg-center"
     >
       <div className="pt-5">
         <h2 className="font-fiba text-white text-5xl">LOS ANGELES LAKERS</h2>
