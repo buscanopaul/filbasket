@@ -10,6 +10,8 @@ const VideoDetail = (props: Props) => {
       <iframe
         className="w-full aspect-video rounded-md bg-secondary-color"
         src="https://www.youtube.com/embed/RdACcw_eZRc"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
       <h3 className="font-fiba text-secondary-color text-2xl pt-5 mb-1">
