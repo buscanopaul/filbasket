@@ -101,7 +101,11 @@ const ScheduleListItemFinal = (props: Props) => {
       {/* tickets or highlights */}
       <Link href={`/videos/${1}`}>
         <div className="flex flex-row items-center lg:justify-self-end justify-self-start cursor-pointer">
-          <PlayCircleIcon className="h-5 w-5 text-secondary-color" />
+          <PlayCircleIcon
+            className={`h-5 w-5 ${
+              props.isDark ? `text-white` : `text-secondary-color`
+            }`}
+          />
           <p
             className={`font-robotoMonoBold ${
               props.isDark ? `text-white` : `text-secondary-color`
