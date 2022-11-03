@@ -6,7 +6,7 @@ type Props = {};
 
 const LatestVideosItem = (props: Props) => {
   return (
-    <div className="w-full mb-10 relative">
+    <div className="w-full mb-10 relative cursor-pointer">
       <Link href={`/videos/${1}`}>
         <div>
           <div
