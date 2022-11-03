@@ -8,7 +8,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-type Props = {};
+type Props = {
+  isDark: Boolean;
+};
 
 const ScheduleListItemFinal = (props: Props) => {
   return (
@@ -28,7 +30,11 @@ const ScheduleListItemFinal = (props: Props) => {
               }}
               className={`w-10 h-10 bg-no-repeat bg-center bg-contain`}
             />
-            <h4 className="font-robotoMono text-secondary-color text-sm pl-2">
+            <h4
+              className={`font-robotoMono ${
+                props.isDark ? `text-white` : `text-secondary-color`
+              } text-sm pl-2`}
+            >
               Clippers
             </h4>
           </div>
@@ -40,14 +46,28 @@ const ScheduleListItemFinal = (props: Props) => {
               }}
               className={`w-10 h-10 bg-no-repeat bg-center bg-contain`}
             />
-            <h4 className="font-robotoMono text-secondary-color text-sm pl-2">
+            <h4
+              className={`font-robotoMono ${
+                props.isDark ? `text-white` : `text-secondary-color`
+              } text-sm pl-2`}
+            >
               Wizards
             </h4>
           </div>
         </div>
         <div className="relative flex flex-col items-end justify-evenly h-full w-full">
-          <p className="font-robotoMono text-secondary-color text-sm">90</p>
-          <p className="font-robotoMonoBold text-secondary-color text-sm">
+          <p
+            className={`font-robotoMono ${
+              props.isDark ? `text-white` : `text-secondary-color`
+            } text-sm`}
+          >
+            90
+          </p>
+          <p
+            className={`font-robotoMonoBold ${
+              props.isDark ? `text-white` : `text-secondary-color`
+            } text-sm`}
+          >
             120
           </p>
         </div>
@@ -57,7 +77,11 @@ const ScheduleListItemFinal = (props: Props) => {
         <p className="font-robotoMono text-gray-500 text-sm">
           Little Caesars Arena
         </p>
-        <p className="font-robotoMono text-secondary-color text-sm">
+        <p
+          className={`font-robotoMono ${
+            props.isDark ? `text-white` : `text-secondary-color`
+          } text-sm`}
+        >
           Detroit, MI
         </p>
       </div>
@@ -65,7 +89,11 @@ const ScheduleListItemFinal = (props: Props) => {
       <Link href={`/game-detail/${1}/#box`}>
         <div className="flex flex-row items-center lg:justify-self-end justify-self-start cursor-pointer">
           <PresentationChartBarIcon className="h-5 w-5 text-secondary-color" />
-          <p className="font-robotoMonoBold text-secondary-color pl-2">
+          <p
+            className={`font-robotoMonoBold ${
+              props.isDark ? `text-white` : `text-secondary-color`
+            } pl-2`}
+          >
             Box Score
           </p>
         </div>
@@ -74,7 +102,11 @@ const ScheduleListItemFinal = (props: Props) => {
       <Link href={`/videos/${1}`}>
         <div className="flex flex-row items-center lg:justify-self-end justify-self-start cursor-pointer">
           <PlayCircleIcon className="h-5 w-5 text-secondary-color" />
-          <p className="font-robotoMonoBold text-secondary-color pl-2">
+          <p
+            className={`font-robotoMonoBold ${
+              props.isDark ? `text-white` : `text-secondary-color`
+            } pl-2`}
+          >
             Highlights
           </p>
         </div>

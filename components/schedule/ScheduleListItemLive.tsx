@@ -8,7 +8,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-type Props = {};
+type Props = {
+  isDark: Boolean;
+};
 
 const ScheduleListItemLive = (props: Props) => {
   return (
@@ -30,7 +32,11 @@ const ScheduleListItemLive = (props: Props) => {
               }}
               className={`w-10 h-10 bg-no-repeat bg-center bg-contain`}
             />
-            <h4 className="font-robotoMono text-secondary-color text-sm pl-2">
+            <h4
+              className={`font-robotoMono ${
+                props.isDark ? `text-white` : `text-secondary-color`
+              } text-sm pl-2`}
+            >
               Hawks
             </h4>
           </div>
@@ -42,14 +48,30 @@ const ScheduleListItemLive = (props: Props) => {
               }}
               className={`w-10 h-10 bg-no-repeat bg-center bg-contain`}
             />
-            <h4 className="font-robotoMono text-secondary-color text-sm pl-2">
+            <h4
+              className={`font-robotoMono ${
+                props.isDark ? `text-white` : `text-secondary-color`
+              } text-sm pl-2`}
+            >
               Heat
             </h4>
           </div>
         </div>
         <div className="relative flex flex-col items-end justify-evenly h-full w-full">
-          <p className="font-robotoMono text-secondary-color text-sm">1</p>
-          <p className="font-robotoMono text-secondary-color text-sm">6</p>
+          <p
+            className={`font-robotoMono ${
+              props.isDark ? `text-white` : `text-secondary-color`
+            } text-sm`}
+          >
+            1
+          </p>
+          <p
+            className={`font-robotoMono ${
+              props.isDark ? `text-white` : `text-secondary-color`
+            } text-sm`}
+          >
+            6
+          </p>
         </div>
       </div>
       {/* location */}
@@ -57,7 +79,11 @@ const ScheduleListItemLive = (props: Props) => {
         <p className="font-robotoMono text-gray-500 text-sm">
           Little Caesars Arena
         </p>
-        <p className="font-robotoMono text-secondary-color text-sm">
+        <p
+          className={`font-robotoMono ${
+            props.isDark ? `text-white` : `text-secondary-color`
+          } text-sm`}
+        >
           Detroit, MI
         </p>
       </div>
