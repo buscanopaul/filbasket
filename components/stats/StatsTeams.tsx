@@ -5,10 +5,10 @@ import StatsPlayerYear from "./StatsPlayerYear";
 
 type Props = {};
 
-const StatsPlayer = (props: Props) => {
+const StatsTeams = (props: Props) => {
   return (
     <div className="relative w-full">
-      <LargeTitle title="Player Stats" isDark={true} isLeft={true} />
+      <LargeTitle title="Team Stats" isDark={true} isLeft={true} />
       <div className="flex flex-row items-center justify-between">
         <h4 className="font-fiba text-2xl text-secondary-color mb-5">
           2022 Filbasket - Filipino Basketball League
@@ -86,4 +86,4 @@ const StatsPlayer = (props: Props) => {
   );
 };
 
-export default StatsPlayer;
+export default StatsTeams;

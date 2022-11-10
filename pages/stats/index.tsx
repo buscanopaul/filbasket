@@ -19,7 +19,7 @@ const index = (props: Props) => {
       <StatsLeaderPlayer isPlayer={true} />
       <div className="flex items-center justify-between">
         <Title title="Stats Leader - Team" isDark={true} isLeft={true} />
-        <Link href={`/stats/player`}>
+        <Link href={`/stats/teams`}>
           <h3 className="font-fiba text-secondary-color underline cursor-pointer">
             See all teams stats
           </h3>
