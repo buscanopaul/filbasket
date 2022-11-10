@@ -1,4 +1,7 @@
 import React from "react";
+import StandingsYear from "../standings/StandingsYear";
+import StatsPlayerYear from "../stats/StatsPlayerYear";
+import Title from "../text/Title";
 import ScheduleListItem from "./ScheduleListItem";
 import ScheduleListItemFinal from "./ScheduleListItemFinal";
 import ScheduleListItemLive from "./ScheduleListItemLive";
@@ -10,7 +13,15 @@ type Props = {
 const ScheduleList = (props: Props) => {
   return (
     <div className="relative w-full px-3">
-      <div className="relative flex flex-row items-center justify-between pt-10">
+      <div className="flex items-center justify-between">
+        <Title
+          title="2022 Filbasket - Filipino Basketball League"
+          isDark={true}
+          isLeft={true}
+        />
+        <StatsPlayerYear />
+      </div>
+      <div className="relative flex flex-row items-center justify-between pt-5">
         <h3
           className={`font-fiba text-2xl ${
             props.isDark ? `text-white` : `text-secondary-color`
