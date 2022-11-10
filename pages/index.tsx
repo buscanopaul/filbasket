@@ -1,15 +1,18 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Footer from "../components/footer/Footer";
+import Header from "../components/header/Header";
+import HomeScreen from "../components/home/HomeScreen";
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="relative">
       <Head>
-        <title>Create Next App</title>
+        <title>FilBasket - Filipino Basketball League</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>lest build filbasket</h1>
+      <HomeScreen />
     </div>
   );
 };
