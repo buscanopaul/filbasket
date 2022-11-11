@@ -11,7 +11,9 @@ const GameHeaderRight = (props: Props) => {
         }}
         className={`relative h-40 w-40 bg-cover bg-no-repeat bg-center text-center`}
       />
-      <h3 className="text-white font-fiba text-xl">EA7 Emporio Armani Milan</h3>
+      <h3 className="text-white font-fiba text-xl pt-5">
+        EA7 Emporio Armani Milan
+      </h3>
     </div>
   );
 };

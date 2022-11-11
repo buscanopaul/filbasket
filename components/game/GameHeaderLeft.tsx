@@ -11,7 +11,9 @@ const GameHeaderLeft = (props: Props) => {
         }}
         className={`relative h-40 w-40 bg-cover bg-no-repeat bg-center`}
       />
-      <h3 className="text-white font-fiba text-xl">Virtus Segafredo Bologna</h3>
+      <h3 className="text-white font-fiba text-xl pt-5">
+        Virtus Segafredo Bologna
+      </h3>
     </div>
   );
 };
