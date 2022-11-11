@@ -7,13 +7,15 @@ type Props = {
 
 const StatsLeaderPlayerLeading = (props: Props) => {
   return (
-    <Link href={props.isPlayer ? `/player/${1}` : `/team/${1}`}>
-      <div className="flex items-center justify-between bg-gray-100 rounded-md px-5 py-3 cursor-pointer">
+    <Link href={props.isPlayer ? `/player/${1}` : `/teams/${1}`}>
+      <div className="flex items-center justify-between bg-gray-100 rounded-md px-5 py-3 cursor-pointer group">
         <div>
           <h3 className="font-fiba text-2xl text-secondary-color">
             36.0 - Points Per Game
           </h3>
-          <p className="font-robotoMono pt-3">1. Luka Doncic</p>
+          <p className="font-robotoMono pt-3 group-hover:underline">
+            1. Luka Doncic
+          </p>
         </div>
         <div
           style={{
